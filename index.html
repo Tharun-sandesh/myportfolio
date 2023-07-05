@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c497b46b9d.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
+</head>
+
+<body>
+    <nav class="sticky">
+        <h1 class="logo"><span>M</span>Y PORTFOLIO</h1>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div id="header">
+        <div class="container">
+            <div class="row-1">
+                <div class="header-col-1">
+                    <p><b>WEB</b> DEVELOPER</p>
+                    <h1>Hi I'm <span>Tharun Kumar</span> <br>This is my official Portfolio Website to show<br>The details and Work experince of Web Development...</h1>
+                </div>
+                <div class="header-col-2">
+                    <img src="images/IMG_20230506_165107 (2).png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="images/dark.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>A</span>BOUT <span>M</span>E</h1>
+                    <h2>Hello everyone,</h2>
+                    <p> My name is <b> THARUN KUMAR</b> And i'm from <b>HYDERABAD, TELANGANA.</b><br>I'm currently pursuing my btech from<br><b>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY RANCHI.</b><br>And my Hobbies are <b>Reading Books And Solving Puzzels</b><br>And
+                        <br>I have completed coding languages like<br><b>PYTHON , HTML , CSS, JAVA.</b><br>I'm Currently doing my intern at
+                        <b> BHARAT INTERN.</b></p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('Skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('Education')">Education</div>
+                        <div class="tab-links" onclick="opentab('Hobbies')">Hobbies</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li>Web Developer</li>
+                            <li>Python Programming</li>
+                            <li>Mysql</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li>Completed my Schooling from <br><b>SRI GOUTHAM GRAMMER HIGH SCHOOL</b><br>-With 87%</li>
+                            <li>Completed my Intermediate from <br><b>NARAYANA JR COLLEGE</b><br>-With 91.9%</li>
+                            <li>Currently Pursuing My Btech from<br><b>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY
+                                    RANCHI</b><br>-With CGPA 7.8</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li>Solving Puzzels</li>
+                            <li>Playing Cricket</li>
+                            <li>Painting</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="contact">
+        <div class="containers">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span>C</span>ONTACT <span>M</span>E</h1>
+                    <p><i class="fa fa-solid fa-paper-plane"></i>tharunsandesh22@gmail.com</p>
+                    <p><i class="fa fa-solid fa-phone"></i>9494777620</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+
+                    </div>
+                    <a href="" class="btn">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Tharun Kumar.All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+</body>
+
+</html>
